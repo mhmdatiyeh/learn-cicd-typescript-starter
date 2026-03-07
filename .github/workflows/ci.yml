@@ -37,7 +37,10 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run formatting check
         run: npm run format:check
+
+      - name: Run linting
+        run: npm run lint
